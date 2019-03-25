@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularPractice": {
+    "NgMvcDemo": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "Scripts/App",
+            "outputPath": "ClientApp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -25,8 +25,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-            ]
+            "scripts": [],
+            "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -58,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "AngularPractice:build"
+            "browserTarget": "NgMvcDemo:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "AngularPractice:build:production"
+              "browserTarget": "NgMvcDemo:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularPractice:build"
+            "browserTarget": "NgMvcDemo:build"
           }
         },
         "test": {
@@ -103,7 +103,7 @@
         }
       }
     },
-    "AngularPractice-e2e": {
+    "NgMvcDemo-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -112,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "AngularPractice:serve"
+            "devServerTarget": "NgMvcDemo:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "AngularPractice:serve:production"
+              "devServerTarget": "NgMvcDemo:serve:production"
             }
           }
         },
@@ -132,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "AngularPractice"
+  "defaultProject": "NgMvcDemo"
 }
