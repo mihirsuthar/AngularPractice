@@ -557,7 +557,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\Omatics_India\Source\Repos\AngularPractice\AngularPractice\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\Users\Mihir\source\repos\AngularPractice\AngularPractice\src\styles.css */"./src/styles.css");
 
 
 /***/ })
